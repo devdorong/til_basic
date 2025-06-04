@@ -3,9 +3,7 @@
 - 회사에서 당황하지 않고 업무환경 설정이 가능하셔야 합니다.
 - 아래 순서대로 퍼블리싱 셋팅하시면 문제없이 진행됩니다.
 - 추천 프로그램
-  -Byeond Compare 코드 비교 도구 (상용버전)
-    -https://www.scootersoftware.com/
-
+  -Byeond Compare 코드 비교 도구 (상용버전) -https://www.scootersoftware.com/
 
 ## 1.1. Node.js 설치
 
@@ -120,132 +118,104 @@
 
 ```html
 <form action="good.html" method="post">
-                <!-- 기본정보 -->
-                <fieldset>
-                  <legend>기본정보</legend>
-                  <label for="userid">아이디(4자~12자)</label> <br />
-                  <input
-                    type="text"
-                    id="userid"
-                    name="id"
-                    minlength="4"
-                    maxlength="12"
-                    required
-                    placeholder="아이디를 입력하세요."
-                  />
-                  <button>아이디 중복확인</button>
-                  <br />
-                  <br />
-                  <label for="useremail">이메일</label> <br />
-                  <input
-                    type="email"
-                    id="useremail"
-                    name="email"
-                    required
-                    placeholder="example@example.com"
-                  />
-                  <br />
-                  <br />
-                  <label for="userpass">비밀번호(6자~16자)</label> <br />
-                  <input
-                    type="password"
-                    id="userpass"
-                    name="pwd"
-                    minlength="6"
-                    maxlength="16"
-                    required
-                    placeholder="비밀번호를 입력해주세요."
-                    autocomplete="off"
-                  />
-                </fieldset>
-                <!-- 상세정보 -->
-                <fieldset>
-                  <legend>상세정보</legend>
-                  <label for="country">국가 선택:</label>
-                  <select id="country" name="country">
-                    <option value="kr">한국</option>
-                    <option value="us">미국</option>
-                    <option value="cn">중국</option>
-                    <option value="jp">일본</option>
-                  </select>
-                  <br />
-                  <br />
-                  <label>성별</label>
-                  <br />
-                  <input
-                    type="radio"
-                    id="male"
-                    name="gender"
-                    value="male"
-                    checked
-                  />
-                  <label for="male">남성</label>
-                  <input
-                    type="radio"
-                    id="female"
-                    name="gender"
-                    value="female"
-                  />
-                  <label for="female">여성</label>
-                  <br />
-                  <br />
-                  <label>취미(다중선택가능)</label>
-                  <br />
-                  <input
-                    type="checkbox"
-                    id="coding"
-                    name="hobby"
-                    value="coding"
-                    checked
-                  />
-                  <label for="coding">코딩</label>
+  <!-- 기본정보 -->
+  <fieldset>
+    <legend>기본정보</legend>
+    <label for="userid">아이디(4자~12자)</label> <br />
+    <input
+      type="text"
+      id="userid"
+      name="id"
+      minlength="4"
+      maxlength="12"
+      required
+      placeholder="아이디를 입력하세요."
+    />
+    <button>아이디 중복확인</button>
+    <br />
+    <br />
+    <label for="useremail">이메일</label> <br />
+    <input
+      type="email"
+      id="useremail"
+      name="email"
+      required
+      placeholder="example@example.com"
+    />
+    <br />
+    <br />
+    <label for="userpass">비밀번호(6자~16자)</label> <br />
+    <input
+      type="password"
+      id="userpass"
+      name="pwd"
+      minlength="6"
+      maxlength="16"
+      required
+      placeholder="비밀번호를 입력해주세요."
+      autocomplete="off"
+    />
+  </fieldset>
+  <!-- 상세정보 -->
+  <fieldset>
+    <legend>상세정보</legend>
+    <label for="country">국가 선택:</label>
+    <select id="country" name="country">
+      <option value="kr">한국</option>
+      <option value="us">미국</option>
+      <option value="cn">중국</option>
+      <option value="jp">일본</option>
+    </select>
+    <br />
+    <br />
+    <label>성별</label>
+    <br />
+    <input type="radio" id="male" name="gender" value="male" checked />
+    <label for="male">남성</label>
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female">여성</label>
+    <br />
+    <br />
+    <label>취미(다중선택가능)</label>
+    <br />
+    <input type="checkbox" id="coding" name="hobby" value="coding" checked />
+    <label for="coding">코딩</label>
 
-                  <input
-                    type="checkbox"
-                    id="tour"
-                    name="hobby"
-                    value="tour"
-                    checked
-                  />
-                  <label for="tour">여행</label>
+    <input type="checkbox" id="tour" name="hobby" value="tour" checked />
+    <label for="tour">여행</label>
 
-                  <input
-                    type="checkbox"
-                    id="music"
-                    name="hobby"
-                    value="music"
-                    checked
-                  />
-                  <label for="music">음악</label>
-                  <br />
-                  <br />
-                  <label for="birthday">생년월일</label> <br />
-                  <input type="date" id="birthday" name="birthday" />
-                  <br />
-                  <br />
-                  <label for="file">첨부파일</label> <br />
-                  <input type="file" id="file" name="file" />
-                  <br />
-                  <br />
-                  <label for="intro">자기소개 : </label> <br />
-                  <textarea
-                    id="intro"
-                    name="intro"
-                    rows="5"
-                    cols="40"
-                    placeholder="자기소개를 입력하세요."
-                  ></textarea>
-                </fieldset>
-                <!-- 정보입력 -->
-                <fieldset>
-                  <legend>정보입력</legend>
-                  <input type="reset" value="재작성" />
-                  <input type="submit" value="등록" />
-                </fieldset>
-              </form>
+    <input type="checkbox" id="music" name="hobby" value="music" checked />
+    <label for="music">음악</label>
+    <br />
+    <br />
+    <label for="birthday">생년월일</label> <br />
+    <input type="date" id="birthday" name="birthday" />
+    <br />
+    <br />
+    <label for="file">첨부파일</label> <br />
+    <input type="file" id="file" name="file" />
+    <br />
+    <br />
+    <label for="intro">자기소개 : </label> <br />
+    <textarea
+      id="intro"
+      name="intro"
+      rows="5"
+      cols="40"
+      placeholder="자기소개를 입력하세요."
+    ></textarea>
+  </fieldset>
+  <!-- 정보입력 -->
+  <fieldset>
+    <legend>정보입력</legend>
+    <input type="reset" value="재작성" />
+    <input type="submit" value="등록" />
+  </fieldset>
+</form>
 ```
 
 ### 3.3.3 ul 태그 : unOrderList (목록태그)
+
 - 동일한 형태의 레이아웃이 반복된다면 묶어서 활용
 - 동일한 기능이 반복된다면 묶어서 활용
 
@@ -257,24 +227,139 @@
 # 4. CSS 의 이해
 
 ## 4.1. CSS 코딩 자리 3가지
+
 - 인라인 css
-``` html
+
+```html
 <태그 style=""> </태그>
 ```
 
 - style 태그 css
+
 ```html
 <style></style>
 <태그></태그>
 ```
 
 - style 파일 link 방식
+
 ```html
 <link rel="stylesheet" href="경로/파일명.css" />
 ```
 
 ## 4.2. header css 실습
-- `css/header.css` 파일 
+
+- `css/header.css` 파일
+
 ```html
 <link rel="stylesheet" href="css/header.css" />
+```
+
+## 4.3. display 의 이해
+
+- block, inline, inline-block, none, flex ...
+
+### 4.3.1. block
+
+- 하나의 `침범할 수 없는 가로 영역`
+- div, ul, li, h1~h6, p 등등
+- 기본적으로 width: 100%
+
+### 4.3.2. inline
+
+- 한개의 글자처럼 처리됩니다.
+- width, height, margin, padding 을 적용못함
+- a, img, span, b, strong 등등
+
+### 4.3.3. inline-block
+
+- inline 과 blcok 을 조합한다.
+- 가로로 배치되면서, width, height 등을 자유롭게 활용함.
+
+### 4.3.4. flex
+
+- block 이면서 inline 이면서, 가로 정렬, 세로 정렬, 여백 조절 가능
+- 가로로 레이아웃 배치시 최적화
+- https://studiomeal.com/archives/197
+- justify-content, align-items, gap, flex:숫자 등등
+
+### 4.3.5 grid
+
+- block 이면서 inline 이면서, 가로 정렬, 세로 정렬, 여백 조절 가능
+- https://studiomeal.com/archives/533
+
+### 4.3.6 none
+
+- 화면에 html 태그가 없는 것처럼 처리
+- js 에서도 없다고 판단하여 초기 처리 코드 불가
+
+## 4.4 반응형의 이해
+
+- 넓은 화면부터 html, css 작업
+- 좁은 화면으로 html, css 마무리 진행 권장
+
+### 4.4.1 반응형 체크 사항
+
+- html 에 반드시 아래 코드가 있어야 합니다.
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+```
+
+### 4.4.2. 미디어 쿼리
+
+- 큰사이즈 부터 작은 사이즈로 max-width를 추천합니다.
+- 공백을 주의해야 합니다.
+- 반드시 {} 안쪽에 원하는 css 코드 하셔야 합니다.
+
+```css
+@media all and (max-width: 1280px) {
+  원하는 css 작성
+}
+@media all and (max-width: 1024px) {
+  원하는 css 작성
+}
+@media all and (max-width: 960px) {
+  원하는 css 작성
+}
+@media all and (max-width: 540px) {
+  원하는 css 작성
+}
+```
+## 4.5. 글꼴 셋팅하기
+- 모든 css 및 html 작업전에 결정하여야 합니다.
+- 디자이너 및 기획자에게 문의해야 합니다.
+- css 의 body 에 기본 글꼴 배치 권장함.
+
+### 4.5.1 구글 웹폰트 활용
+- https://fonts.google.com/
+
+### 4.5.2 눈누 웹폰트 활용
+- https://noonnu.cc/
+
+## 4.6. position 의 이해
+
+- relative, absolute, fixed 등
+
+### 4.6.1. absolute 주의사항
+- 픽셀로 정확한 위치를 지정하는 경우 사용
+- 반드시 상위 태그에 position 이 명시되어야 함.
+```css
+.엄머 {
+  position: relative;
+  position: absolute;
+}
+
+.자식 {
+  position: absolute;
+}
+```
+### 4.6.2 fixed 란 
+- 무조건 웹브라우저를 기준으로 위치설정
+```css
+.대상 {
+  porsition: fixed;
+  left: 0;
+  top: 0;
+}
 ```
