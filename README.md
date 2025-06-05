@@ -342,10 +342,10 @@
 - relative, absolute, fixed 등
 
 ### 4.6.1. absolute 주의사항
-- 픽셀로 정확한 위치를 지정하는 경우 사용
+- 픽셀로 정확한 위치를 지정하는 경우 사용.
 - 반드시 상위 태그에 position 이 명시되어야 함.
 ```css
-.엄머 {
+.엄마 {
   position: relative;
   position: absolute;
 }

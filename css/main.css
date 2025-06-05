@@ -1,7 +1,10 @@
 .main {
     position: relative;
     display: block;
-    padding-top: 153px;
+    padding-top: 30px;
+}
+.main_scroll {
+    padding-top: 157px;
 }
 @media all and (max-width: 1024px) {
     .main {

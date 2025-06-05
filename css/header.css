@@ -1,9 +1,9 @@
-body{
+body {
   height: 5000px;
 }
 
 .header {
-  position: fixed;
+  position: block;
   left: 0;
   top: 0;
 
@@ -12,6 +12,10 @@ body{
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #eaeaea;
+}
+
+.header_fixed {
+  position: fixed;
 }
 .layout {
   max-width: 1280px;
@@ -40,7 +44,12 @@ body{
   justify-content: space-between;
   align-items: center;
 }
+.header_top_scroll{
+  padding: 0;
+}
+
 .header_top_left {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -49,6 +58,11 @@ body{
   width: 144px;
   height: 22px;
 }
+
+.logo_hide {
+  display: none;
+}
+
 .search {
   width: 355px;
   height: 46px;
@@ -60,6 +74,13 @@ body{
   display: flex;
   align-items: center;
 }
+
+.search_scroll {
+  position: absolute;
+  left: 190px;
+  top: 8px;
+}
+
 .search form {
   flex: 1;
 
@@ -88,6 +109,10 @@ body{
   height: auto;
 }
 
+.sale_hide {
+  display: none;
+}
+
 .header_top_right {
 }
 .link_site {
@@ -96,12 +121,16 @@ body{
   gap: 20px;
 }
 
+.link_site_hide {
+  display: none;
+}
+
 .link_site li {
   position: relative;
 }
 .link_site_line::after {
   content: "";
-  
+
   right: -10px;
   top: 4px;
 
@@ -129,11 +158,6 @@ body{
   font-weight: 600;
 }
 
-.member_menu {
-  display: flex;
-  gap: 20px;
-}
-
 .focus::after {
   content: "";
 
@@ -152,6 +176,12 @@ body{
   align-items: center;
 }
 
+.member_menu {
+  display: flex;
+  gap: 20px;
+}
+
+
 .member_menu li a {
   display: flex;
   align-items: center;
@@ -161,6 +191,11 @@ body{
   font-size: 12px;
   font-weight: 600;
 }
+
+.height_62 {
+  height: 62px !important;
+}
+
 /* 모바일 메뉴 */
 .mobile_header {
   position: fixed;
@@ -168,7 +203,7 @@ body{
   top: 0;
 
   z-index: 999;
-  
+
   display: none;
   width: 100%;
   padding: 15px 20px;
