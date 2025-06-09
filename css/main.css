@@ -1,7 +1,7 @@
 .main {
-    position: relative;
     display: block;
     padding-top: 30px;
+    position: relative;
 }
 .main_scroll {
     padding-top: 157px;
