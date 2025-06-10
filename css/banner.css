@@ -16,7 +16,6 @@
   overflow: hidden;
 
   height: 345px;
-  background-color: red;
   border-radius: 15px;
 }
 
@@ -28,7 +27,6 @@
 }
 
 .banner_slide_prev {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +54,6 @@
 }
 
 .banner_slide_next {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +76,7 @@
   border-radius: 50%;
 }
 
+/* 처음에는 페이지네이션이 안보인다. */
 .banner_slide_pg {
   display: none;
 }
@@ -88,14 +86,60 @@
     height: 275px;
   }
 }
+
 @media all and (max-width: 1024px) {
   .banner_slide_item {
     height: 202px;
+  }
+  /* 다중으로 선택함 (, 로 구분함) */
+  .banner_slide_next,
+  .banner_slide_prev {
+    display: none;
+  }
+  /* 페이지네이션이 보여야 함.  */
+  .banner_slide_pg {
+    display: flex;
+    /* 가로정렬 */
+    justify-content: center;
+    padding-top: 10px;
+  }
+  /* 기본 버튼들 css */
+  .banner_slide_pg .swiper-pagination-bullet {
+  }
+  /* 활성화 버튼 css */
+  .banner_slide_pg .swiper-pagination-bullet-active {
+    background-color: #000000;
   }
 }
 @media all and (max-width: 760px) {
   .sw_banner {
     max-width: 350px;
+  }
+  /* 페이지 네이션 위치 조정 */
+  .banner_slide_pg {
+    /* 세로정렬 */
+    align-items: center;
+
+    padding-top: 0px;
+    transform: translateY(-15px);
+
+    /* z-index 가 안먹힌다면 position 이 없어서 */
+
+    position: relative;
+    z-index: 100;
+  }
+  .banner_slide_pg .swiper-pagination-bullet {
+    background-color: #ffffff;
+    opacity: 0.6;
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .banner_slide_pg .swiper-pagination-bullet-active {
+    background-color: #ffffff;
+    opacity: 1;
+    width: 8px;
+    height: 8px;
   }
   .banner_slide_item {
     height: 192px;
