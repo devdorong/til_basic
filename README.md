@@ -902,9 +902,18 @@ else{
 ```html
 <div class="swiper 개발자클래스">
   <div class="swiper-wrapper">
-    <div class="swiper-slide">내용</div>
-    <div class="swiper-slide">내용</div>
-    <div class="swiper-slide">내용</div>
+    <div class="swiper-slide" style="background-color: skyblue;">1</div>
+    <div class="swiper-slide" style="background-color: skyblue;">2</div>
+    <div class="swiper-slide" style="background-color: skyblue;">3</div>
+    <div class="swiper-slide" style="background-color: skyblue;">4</div>
+    <div class="swiper-slide" style="background-color: skyblue;">5</div>
+    <div class="swiper-slide" style="background-color: skyblue;">6</div>
+    <div class="swiper-slide" style="background-color: skyblue;">7</div>
+    <div class="swiper-slide" style="background-color: skyblue;">8</div>
+    <div class="swiper-slide" style="background-color: skyblue;">9</div>
+    <div class="swiper-slide" style="background-color: skyblue;">10</div>
+    <div class="swiper-slide" style="background-color: skyblue;">11</div>
+    <div class="swiper-slide" style="background-color: skyblue;">12</div>
   </div>
 </div>
 ```

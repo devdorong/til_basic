@@ -1,30 +1,30 @@
 window.addEventListener("load", function () {
   // swiper 만들기 실행
-  new Swiper(".sw_trip", {
-    slidesPerView: 8,
-    spaceBetween: 8,
+  new Swiper(".sw_live", {
+    slidesPerView: 12,
+    spaceBetween: 10,
     slidesPerGroup: 1,
     navigation: {
-      nextEl: ".trip_slide_next",
-      prevEl: ".trip_slide_prev",
+      nextEl: ".live_slide_next",
+      prevEl: ".live_slide_prev",
     },
+    
     breakpoints: {
       960: {
         slidesPerView: 2,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
+        spaceBetween: 25,
+        slidesPerGroup: 2,
       },
       1024: {
         slidesPerView: 3,
-        spaceBetween: 20,
-        slidesPerGroup: 1,
+        spaceBetween: 23,
+        slidesPerGroup: 3,
       },
       1280: {
         slidesPerView: 4,
         spaceBetween: 20,
-        slidesPerGroup: 1,
+        slidesPerGroup: 4,
       },
     },
-    
   });
 });
