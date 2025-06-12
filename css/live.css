@@ -6,7 +6,7 @@
 
 .live_title img {
   width: 154px;
-  
+
   height: 40px;
 }
 .live_title {
@@ -62,26 +62,23 @@
 }
 .live_more {
   display: flex;
-  
+
   justify-content: center;
   padding-top: 20px;
   position: relative;
 }
 .live_more_bt {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+  border: 1px solid #e5e5e5;
+  height: 56px;
+  background-color: #fff;
 
-    display: flex;
-    gap: 7px;
-    align-items: center;
-    justify-content: center;
-    padding: 0 40px;
-    border: 1px solid #e5e5e5;
-    height: 56px;
-    background-color: #fff;
-
-    font-size: 16px;
-    font-weight: 700;
-    color: #333;
-    border-radius: 28px;
-
-
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  border-radius: 28px;
 }
