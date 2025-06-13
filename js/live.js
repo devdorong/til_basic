@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   // swiper 만들기 실행
   new Swiper(".sw_live", {
-    slidesPerView: 12,
+    slidesPerView: 4,
     spaceBetween: 10,
     slidesPerGroup: 1,
     navigation: {
@@ -10,11 +10,6 @@ window.addEventListener("load", function () {
     },
     
     breakpoints: {
-      960: {
-        slidesPerView: 2,
-        spaceBetween: 25,
-        slidesPerGroup: 2,
-      },
       1024: {
         slidesPerView: 3,
         spaceBetween: 23,

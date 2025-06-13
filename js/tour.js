@@ -155,7 +155,7 @@ window.addEventListener("load", function () {
   swTourPos.innerHTML = htmlTag;
 
   new Swiper(".sw_tour", {
-    slidesPerView: 5,
+    slidesPerView: 4,
     grid: {
       rows: 2,
       fill: " row",

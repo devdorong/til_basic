@@ -660,6 +660,23 @@
   overflow: hidden;
 }
 ```
+## 4.11. Gradient 온라인 도구
+- http://cssgradient.io
+
+## 4.12. 두줄 말 줄임 코드 (... 처리)
+
+```css
+선택 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* white-space: nowrap; */
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 2줄 이상일땐 숫자를 변경 */
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+```
+
 
 # 5. javaScript 의 이해
 

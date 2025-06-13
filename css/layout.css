@@ -15,6 +15,7 @@ a {
 }
 
 html {
+  min-width: 640px;
   overflow-x: hidden ;
 }
 

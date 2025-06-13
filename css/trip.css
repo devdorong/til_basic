@@ -37,13 +37,112 @@
   gap: 20px;
 }
 .trip_slide_item {
+  position: relative;
   display: block;
-  border: 1px solid #f0f0f0;
   width: 100%;
-  height: 400px;
-  background-color: skyblue;
+  max-height: 400px;
+  height: 31.25vw;
   border-radius: 11px;
 }
+
+.trip_image {
+  height: 61%;
+  border-radius: 11px 11px 0 0;
+  overflow: hidden;
+}
+.trip_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trip_info {
+  padding: 20px 25px;
+  position: relative;
+  /* height: calc(100% - 244px); */
+  height: 39%;
+  border: 1px solid #f0f0f0;
+  border-top: none;
+  border-radius: 0 0 11px 11px;
+}
+.trip_icon {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  padding: 0 10px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 24px;
+  background: linear-gradient(
+    90deg,
+    #4ed8eb 0.08%,
+    #c9d8f4 21.6%,
+    #fbeaf0 42.04%,
+    #c0f3f3 65.17%,
+    #a9eeee 83.46%,
+    #5cf3dc 103.36%
+  );
+  font-size: 13px;
+  font-weight: 700;
+  color: #1c1c1e;
+  transform: translateY(-50%);
+  border-radius: 12px;
+}
+.trip_icon img {
+}
+
+.trip_item_title {
+  /* white-space: nowrap; */
+  display: -webkit-box;
+
+  /* 2줄 말줄임 */
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: 400;
+  /* 행간 */
+  line-height: 1.6;
+  color: #1c1c1e;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.trip_schedule {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  padding: 5px 0;
+}
+/* 단어 사이에 중간 ' 넣기 */
+.trip_schedule span {
+  padding-right: 11px;
+  position: relative;
+}
+.trip_schedule span::before {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 2px;
+  height: 2px;
+  background-color: #868686;
+  content: "";
+  transform: translateX(-5px);
+}
+/* 만들었는 가운데 ' 의 마지막 ' 을 삭제 */
+.trip_schedule span:last-child::before {
+  display: none;
+}
+.trip_price {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+}
+.trip_price b {
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .trip_slide_prev img {
   transform: rotate(180deg);
 }
@@ -100,4 +199,45 @@
   font-weight: 700;
   color: #333;
   border-radius: 28px;
+}
+
+/* 반응형 */
+@media all and (max-width: 1280px) {
+}
+@media all and (max-width: 1100px) {
+  .trip_info {
+    padding: 15px 25px;
+  }
+}
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 990px) {
+  .trip_item_title {
+    font-size: 17px;
+    line-height: 1.3;
+  }
+  .trip_schedule {
+    padding: 0px;
+  }
+}
+@media all and (max-width: 960px) {
+  .trip_item_title {
+    white-space: nowrap;
+    line-height: 1.6;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .trip_slide_item {
+    height: 270px;
+  }
+  .trip_schedule {
+    overflow: hidden;
+  }
+
+  .trip_schedule span {
+    white-space: nowrap;
+  }
+}
+@media all and (max-width: 760px) {
 }
