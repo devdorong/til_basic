@@ -6,6 +6,8 @@
   position: relative;
 }
 .banner_wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .banner_slide {
   display: flex;
@@ -88,6 +90,8 @@
 }
 
 @media all and (max-width: 1024px) {
+  .banner_wrap {
+      padding-top: 8px;}
   .banner_slide_item {
     height: 202px;
   }
@@ -115,6 +119,7 @@
   .sw_banner {
     max-width: 350px;
   }
+  
   /* 페이지 네이션 위치 조정 */
   .banner_slide_pg {
     /* 세로정렬 */

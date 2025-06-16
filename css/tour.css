@@ -33,6 +33,7 @@
   font-weight: 400px;
   color: rgba(18, 18, 18, 0.5);
   text-align: center;
+  white-space: nowrap;
 }
 .tour_top_category {
   display: flex;
@@ -55,6 +56,7 @@
   font-size: 14px;
   cursor: pointer;
   border-radius: 22px;
+  white-space: nowrap;
 }
 .tour_button_list li button:active {
   opacity: 0.6;
@@ -84,7 +86,6 @@
 .tour_item {
   display: block;
   overflow: hidden;
-  height: 365px;
 
   border-radius: 12px;
 }
@@ -192,6 +193,7 @@
 .tour_more_bt {
   display: flex;
   gap: 7px;
+  justify-content: center;
   align-items: center;
   padding: 0 39px;
   border: 1px solid #e5e5e5;
@@ -211,9 +213,83 @@
 @media all and (max-width: 1280px) {
 }
 @media all and (max-width: 1024px) {
-  .tour_slide_wrap {
-    width: 1024px;
+  .tour {
+    border-top: 8px solid #f0f4f4;
   }
+  .layout {
+    max-width: 760px;
+    padding: 0 20px;
+    overflow: hidden;
+  }
+  .tour_top {
+    padding-top: 8px;
+    padding-bottom: 12px;
+  }
+  .tour_top_title .title {
+    font-size: 20px;
+  }
+  .tour_top_title .subtitle {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .tour_button_list li button {
+    height: 38px;
+    padding: 0 14px;
+  }
+
+  .sw_tour {
+    overflow: visible !important;
+  }
+  /* 아래 부분만 box-sizing 별도 적용 */
+  /* .sw_tour * {
+    box-sizing: content-box;
+  } */
+  .sw_tour .swiper-slide {
+    width: 230px !important;
+  }
+  /* swiper 트릭 강제로 slide 너비를 고정 시킴 */
+  .sw_tour .swiper-slide {
+    width: 230px !important;
+  }
+  .tour_item {
+  }
+  .tour_item_image {
+    height: 138px;
+  }
+  .tour_item_info {
+    padding: 10px;
+  }
+  .tour_item_info .tour_city {
+    font-size: 10px;
+  }
+  .tour_item_info .tour_sale {
+    padding-top: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .tour_item_info .tour_price {
+    font-size: 13px;
+  }
+  .tour_item_info .tour_price b {
+    font-size: 15px;
+  }
+  .tour_slide_next, .tour_slide_prev {
+    display: none;
+  }
+  .tour_more {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    
+  }
+  .tour_more_bt {
+    
+    width: 100%;
+    border-radius: 4px;
+    height: 48px;
+  }
+  
 }
 @media all and (max-width: 960px) {
 }

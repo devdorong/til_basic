@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
   // swiper 만들기 실행
   new Swiper(".sw_trip", {
     slidesPerView: 3,
-    spaceBetween: 8,
+    spaceBetween: 10,
     slidesPerGroup: 1,
     navigation: {
       nextEl: ".trip_slide_next",

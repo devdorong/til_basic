@@ -1,5 +1,6 @@
 console.log("header.js 코드 실행");
 
+
 // html 의 태그구조를 모두 읽어들였다면 그때 찾아라.
 // const    : 방하나 주기 (웹브라우저에 보관하겠다.)
 // ↳ (불변, 상수 = 변하지 않는 값)
@@ -27,11 +28,34 @@ window.addEventListener("DOMContentLoaded", function () {
   const mainMenuA = document.querySelectorAll(".main_menu li a");
   // 멤버메뉴 a 태그들 : 여러개
   const memberMenuA = document.querySelectorAll(".member_menu li a");
+  // 모바일 메뉴 참조
+  const mobileHeader = document.querySelector(".mobile_header");
+
+
+  const focusName = "focus";
+  const lis = document.querySelectorAll(".main_menu li a");
+  // 태그 등의 DOM 들을 모아둔 배열을 다룰때 추천 반복 문법
+  lis.forEach(function (item) {
+    item.addEventListener("click", function () {
+      // 모든 버튼에서 tour_focus 클래스 제거
+      removeFocus();
+      // 클릭된 버튼은 tour_focus 클래스 추가
+      item.classList.add("focus");
+    });
+  });
+
+  // 버튼에서 포커스 제거하는 기능
+  function removeFocus() {
+    lis.forEach(function(item) {
+        item.classList.remove(focusName);
+    })
+  }
+  
   // 웹브라우저의 스크롤을 체크하겠다.
   window.addEventListener("scroll", function () {
     // 스크롤바의 최상단
     const scY = window.scrollY;
-    if (scY > 68) {
+    if (scY > 70) {
         header.classList.add("header_fixed");
       headerTop.classList.add("header_top_scroll");
     //   console.log("스크롤되었다.");
@@ -47,6 +71,7 @@ window.addEventListener("DOMContentLoaded", function () {
        memberMenuA.forEach(function (item) {
          item.classList.add("height_62");
        });
+       mobileHeader.classList.add("mobile_scroll_line");
     } else {
         header.classList.remove("header_fixed");
       headerTop.classList.remove("header_top_scroll");
@@ -62,6 +87,7 @@ window.addEventListener("DOMContentLoaded", function () {
        memberMenuA.forEach(function (item) {
          item.classList.remove("height_62");
        });
+       mobileHeader.classList.remove("mobile_scroll_line");
 
     }
   });

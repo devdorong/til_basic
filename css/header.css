@@ -44,7 +44,7 @@ body {
 
   width: 100%;
 }
-.header_top_scroll{
+.header_top_scroll {
   padding: 0;
 }
 
@@ -82,7 +82,6 @@ body {
 }
 
 .search form {
-
   display: flex;
   align-items: center;
   flex: 1;
@@ -129,7 +128,6 @@ body {
   position: relative;
 }
 .link_site_line::after {
-
   position: absolute;
   top: 4px;
 
@@ -147,19 +145,24 @@ body {
 .main_menu li {
 }
 .main_menu li a {
-
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  padding: 0 14px;
+  width: 48px;
+  height: 54px;
   position: relative;
-  height: 48px;
   font-size: 21px;
   font-weight: 600;
 }
+.main_menu .main_tour {
+  margin: 0 10px;
+}
+.main_menu .main_ticket {
+  margin: 0 10px;
+}
 
 .focus::after {
-
   position: absolute;
   bottom: 0;
   left: 0;
@@ -181,7 +184,6 @@ body {
   gap: 20px;
 }
 
-
 .member_menu li a {
   display: flex;
 
@@ -198,9 +200,8 @@ body {
 
 /* 모바일 메뉴 */
 .mobile_header {
-
   display: none;
-  padding: 15px 20px;
+  padding: 7px 20px;
   position: fixed;
   top: 0;
   left: 0;
@@ -209,9 +210,16 @@ body {
   width: 100%;
   background-color: #ffffff;
 }
+.mobile_scroll_line {
+  border-bottom: 1px solid #dfdfdf;
+}
 .mobile_menu {
   display: flex;
   gap: 30px;
+  align-items: center;
+}
+.mobile_menu img {
+  display: flex;
   align-items: center;
 }
 .mobile_menu li a {

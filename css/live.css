@@ -1,6 +1,9 @@
 .live {
+  
+  position: relative;
 }
 .layout {
+  position: relative;
   /* background-color: red; */
 }
 
@@ -210,6 +213,61 @@
 @media all and (max-width: 1080px) {
 }
 @media all and (max-width: 1024px) {
+  .live {
+    
+    border-top: 8px solid #f0f4f4;
+  }
+  .live_title {
+    padding-bottom: 12px;
+  }
+  .live_title img {
+    width: 112px;
+    height: 29px;
+
+  }
+  .live_info {
+    padding: 10px;
+  }
+  
+  .live_wait{
+    font-size: 10px;
+    font-weight: 400;
+    padding: 0 10px;
+    height: 20px;
+  }
+  .live_item_title {
+    font-size: 14px;
+  }
+  .live_day_date {
+    font-size: 18px;
+  }
+  .live_day_time {
+    font-size: 30px;
+  }
+  .live_detail {
+    padding: 10px;
+
+  }
+  .live_detail_image {
+    width: 40px;
+    height: 40px;
+  }
+  .live_detail_title {
+    font-size: 13px;
+  }
+  .live_slide_prev,
+  .live_slide_next {
+    display: none;
+  }
+  .live_more {
+
+  }
+  .live_more_bt {
+    
+    width: 100%;
+    border-radius: 4px;
+    height: 48px;
+  }
 }
 @media all and (max-width: 960px) {
 }

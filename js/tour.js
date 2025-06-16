@@ -155,7 +155,7 @@ window.addEventListener("load", function () {
   swTourPos.innerHTML = htmlTag;
 
   new Swiper(".sw_tour", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     grid: {
       rows: 2,
       fill: " row",
@@ -171,7 +171,7 @@ window.addEventListener("load", function () {
 
     // 반응형
     breakpoints: {
-      1024: {
+      1025: {
         slidesPerView: 2,
         slidesPerGroup: 2,
         spaceBetween: 26,
