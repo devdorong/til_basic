@@ -129,7 +129,7 @@ window.addEventListener("load", function () {
       날짜: "",
       시간: "",
       디테일이미지:
-        "https://media.interparkcdn.net/interpark-tour/imag…,c_limit/v1739859931/domstay/fc0216b6fe6043c5.jpg",
+        "https://common-live-vod.interparkcdn.net/data/image/20250610/14/152/20250610092726.png",
       디테일alt: "상세정보",
       디테일타이틀: "스플라스 리솜(덕산)",
       //  할인율 : 67%, 가격 : 125,280원,
@@ -154,53 +154,44 @@ window.addEventListener("load", function () {
     },
     {
       id: 10,
-      링크: "#",
-      이미지:
-        "	https://common-live-vod.interparkcdn.net/data/image/20250409/14/159/20250409080454.jpg",
-      alt: "라이브",
-      방송: "라이브 다시보기",
-      타이틀:
-        "[이스타항공] 부산 ↔ 푸꾸옥 국적사 단독 신규취항! 27개 노선, 왕복 8만원대부터 🎈",
+      링크: "",
+      이미지: "",
+      alt: "",
+      방송: "",
+      타이틀: "",
       날짜: "",
       시간: "",
-      디테일이미지:
-        "https://common-live-vod.interparkcdn.net/data/image/20250325/14/152/20250325045420.png",
-      디테일alt: "상세정보",
-      디테일타이틀: "[쿠폰/전노선] 이스타항공 기획전",
-      live: true,
+      디테일이미지: "",
+      디테일alt: "",
+      디테일타이틀: "",
+      live: false,
     },
     {
       id: 11,
       링크: "#",
-      이미지:
-        "	https://common-live-vod.interparkcdn.net/data/image/20250409/14/159/20250409080454.jpg",
-      alt: "라이브",
-      방송: "라이브 다시보기",
-      타이틀:
-        "[이스타항공] 부산 ↔ 푸꾸옥 국적사 단독 신규취항! 27개 노선, 왕복 8만원대부터 🎈",
+      이미지: "",
+      alt: "",
+      방송: "",
+      타이틀: "",
       날짜: "",
       시간: "",
-      디테일이미지:
-        "https://common-live-vod.interparkcdn.net/data/image/20250325/14/152/20250325045420.png",
-      디테일alt: "상세정보",
-      디테일타이틀: "[쿠폰/전노선] 이스타항공 기획전",
-      live: true,
+      디테일이미지: "",
+      디테일alt: "",
+      디테일타이틀: "",
+      live: false,
     },
     {
       id: 12,
-      링크: "#",
-      이미지:
-        "images/live_99.jpg",
-      alt: "라이브",
-      방송: "라이브 다시보기",
-      타이틀:
-        "[이스타항공] 부산 ↔ 푸꾸옥 국적사 단독 신규취항! 27개 노선, 왕복 8만원대부터 🎈",
+      링크: "",
+      이미지: "",
+      alt: "",
+      방송: "",
+      타이틀: "",
       날짜: "",
       시간: "",
-      디테일이미지:
-        "https://common-live-vod.interparkcdn.net/data/image/20250325/14/152/20250325045420.png",
-      디테일alt: "상세정보",
-      디테일타이틀: "[쿠폰/전노선] 이스타항공 기획전",
+      디테일이미지: "",
+      디테일alt: "",
+      디테일타이틀: "",
       live: false,
     },
   ];
@@ -212,7 +203,7 @@ window.addEventListener("load", function () {
   for (let i = 0; i < liveApiData.length; i++) {
     let tag = "";
     if (liveApiData[i].live) {
-       const isReplay = liveApiData[i].방송 === "라이브 다시보기";
+      const isReplay = liveApiData[i].방송 === "라이브 다시보기";
       tag = `
       <div class="swiper-slide">
         <a href="#" class="live_slide_item">  
@@ -250,15 +241,29 @@ window.addEventListener("load", function () {
   `;
     } else {
       tag += `
-        <div class="swiper-slide">
+        
+      <div class="swiper-slide">
           <a href="#" class="live_slide_item">
-          
-          <div class="live_image">
-            <img
-              src="${liveApiData[i].이미지}"
-              alt="${liveApiData[i].alt}"
-            />   
-            </a>
+            <div class="live_image">
+              <img
+              src="images/live_99.jpg"
+              alt="방송대기"
+              />   
+            </div>
+            <div class="unlive_lifo">
+              <div class="unlive_image">
+              <img src="images/live_logo.svg" alt="unlive_logo" />
+              </div>
+              <div class="unlive_title">
+              방송준비중입니다.
+              </div>
+              <div class="unlive_more">
+                <a href="#" class="unlive_more_bt">
+                  편성표 바로가기
+                </a>
+              </div>
+            </div>
+          </a>
         </div>
       `;
     }

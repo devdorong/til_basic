@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/header.css" />
     <script src="js/header.js"></script>
+    <script src="js/rolling-banner.js"></script>
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/banner.css " />
@@ -28,6 +29,8 @@
     <script src="js/ticket.js"></script>
     <link rel="stylesheet" href="css/live.css" />
     <script src="js/live.js"></script>
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="js/footer.js"></script>
   </head>
   <body>
     <!-- 영역구분 : 내용과 바탕 -->
@@ -543,7 +546,24 @@
 
               <div class="swiper sw_live">
                 <div class="swiper-wrapper">
-                  
+                  <div class="swiper-slide">
+                    <a href="#" class="live_slide_item">
+                      <div class="live_image">
+                        <img src="images/live_99.jpg" alt="방송대기" />
+                        <div class="unlive_lifo">
+                          <div class="unlive_image">
+                            <img src="images/live_logo.svg" alt="unlive_logo" />
+                          </div>
+                          <div class="unlive_title">방송준비중입니다.</div>
+                          <div class="unlive_more">
+                            <a href="#" class="unlive_more_bt">
+                              편성표 바로가기
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -573,12 +593,93 @@
       </main>
       <!-- 영역구분: 하단 -->
       <footer class="footer">
-        <!-- 회사정보 -->
-        <div></div>
-        <!-- 하단 : 고객센터 -->
-        <div></div>
-        <!-- 하단 :  -->
-        <div></div>
+        <!-- 상단 -->
+        <div class="footer_top">
+          <div class="layout">
+            <!-- 하단 메뉴 -->
+            <ul class="footer_menu_list">
+              <li><a href="#">회사소개</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+              </li>
+              <li><a href="#">위치기반서비스 이용약관</a></li>
+              <li><a href="#">여행약관</a></li>
+              <li><a href="#">여행자보험 가입내역</a></li>
+              <li><a href="#">티켓판매안내</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li>
+                <div class="footer_more">
+                  <span>
+                    고객센터
+                    <img src="images/icon_linkArrow.svg" alt="고객센터">
+                  </span>
+
+                  <div class="more_box">
+                    <ul class="more_list">
+                      <li><a href="#">투어 고객센터</a></li>
+                      <li><a href="#">티켓 고객센터</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="footer_more">
+                  <span>Language
+                    <img src="images/icon_linkArrow.svg" alt="language">
+                  </span>
+                  <div class="more_box">
+                    <ul class="more_list">
+                      <li><a href="#">Korean</a></li>
+                      <li><a href="#">English</a></li>
+                      <li><a href="#">Japanese</a></li>
+                      <li><a href="#">Chinese</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 하단 -->
+        <div class="footer_bottom">
+          <div class="layout">
+            <div class="footer_contact">
+              <div class="footer_contact_box">
+                <h3>(주)놀유니버스</h3>
+                <ul>
+                  <li>주소 경기도 성남시 수정구 금토로 70 (금토동, 텐엑스타워)</li>
+                  <li>사업자등록번호 824-81-02515 <button>사업자정보확인</button></li>
+                  <li>통신판매업신고 2024-성남수정-0912</li>
+                  <li>관광사업증 등록번호 : 제2024-000024호</li>
+                  <li>호스팅서비스제공자 (주)놀유니버스｜ 대표이사 배보찬, 최휘영</li>
+                </ul>
+              </div>
+              <div class="footer_contact_box">
+                <h3>(주)놀유니버스</h3>
+                <ul>
+                  <li>주소 경기도 성남시 수정구 금토로 70 (금토동, 텐엑스타워)</li>
+                  <li>사업자등록번호 824-81-02515 <button>사업자정보확인</button></li>
+                  <li>통신판매업신고 2024-성남수정-0912</li>
+                  <li>관광사업증 등록번호 : 제2024-000024호</li>
+                  <li>호스팅서비스제공자 (주)놀유니버스｜ 대표이사 배보찬, 최휘영</li>
+                </ul>
+              </div>
+              <div class="footer_contact_box">
+                <h3>(주)놀유니버스</h3>
+                <ul>
+                  <li>주소 경기도 성남시 수정구 금토로 70 (금토동, 텐엑스타워)</li>
+                  <li>사업자등록번호 824-81-02515 <button>사업자정보확인</button></li>
+                  <li>통신판매업신고 2024-성남수정-0912</li>
+                  <li>관광사업증 등록번호 : 제2024-000024호</li>
+                  <li>호스팅서비스제공자 (주)놀유니버스｜ 대표이사 배보찬, 최휘영</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="footer_copyright"></div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
