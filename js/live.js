@@ -243,7 +243,7 @@ window.addEventListener("load", function () {
       tag += `
         
       <div class="swiper-slide">
-          <a href="#" class="live_slide_item">
+          <div href="#" class="live_slide_item">
             <div class="live_image">
               <img
               src="images/live_99.jpg"
@@ -263,7 +263,7 @@ window.addEventListener("load", function () {
                 </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       `;
     }
