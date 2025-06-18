@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A10/500/A1033180_4_453.jpg",
+        "images/trip_1.jpg",
       alt: "[베스트셀러/W트립] 4성급 밍가든VS판보르네오 호핑+자유일정 포함 코타키나발루 5일",
       대상: "가족",
       타이틀:
@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A30/500/A3018715_8_223.jpg",
+        "images/trip_2.jpg",
       alt: "[[영어캠프홀릭]일본 오키나와 1주 영어캠프, 25년 여름방학 맞이 오키나와 놀이형 영어캠프",
       대상: "아이",
       타이틀:
@@ -28,7 +28,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A60/500/A6020752_1_257.jpg",
+        "images/trip_3.jpg",
       alt: "[베스트셀러/W트립]보홀 5일, 리조트선택가능, 나팔링투어+반딧불+선셋투어+SNS맛집 포함",
       대상: "친구연인",
       타이틀:
@@ -40,7 +40,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A40/500/A4018929_7_810.jpg",
+        "images/trip_4.jpg",
       alt: "[베스트셀러/W트립]보홀 5일, 리조트선택가능, 나팔링투어+반딧불+선셋투어+SNS맛집 포함",
       대상: "친구연인",
       타이틀:
@@ -52,7 +52,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A10/500/A1033632_4_373.jpg",
+        "images/trip_5.jpg",
       alt: "[베스트셀러/W트립] 튀르키예 9일, 아시아나직항, 월드체인3박UP, 3대옵션포함",
       대상: "친구연인",
       타이틀:
@@ -64,7 +64,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A10/500/A1037435_14_780.jpg",
+        "images/trip_6.jpg",
       alt: "[베스트셀러/W트립] 싱가포르 5일, 마리나베이샌즈 1박, 노쇼핑, 4인이상 출발보장",
       대상: "가족",
       타이틀:
@@ -75,7 +75,7 @@ window.addEventListener("load", function () {
     },
     {
       링크: "#",
-      이미지:"https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A30/500/A3018701_1_393.jpg",
+      이미지:"images/trip_7.jpg",
       alt: "[베스트셀러/W트립] 4성급 밍가든VS판보르네오 호핑+자유일정 포함 코타키나발루 5일",
       대상: "가족",
       타이틀:
@@ -87,7 +87,7 @@ window.addEventListener("load", function () {
     {
       링크: "#",
       이미지:
-        "https://media.interparkcdn.net/interpark-tour/f_auto/w_375,h_270,q_auto,c_auto/tourimage/product/tour/00161/A10/500/A1034124_4_510.jpg",
+        "images/trip_8.jpg",
       alt: "[영어캠프홀릭] 사이판 2주, 명문 국제 사립학교 커리큘럼 스쿨링 영어캠프",
       대상: "아이",
       타이틀:

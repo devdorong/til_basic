@@ -27,7 +27,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "마카오",
       image:
-        "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/2bcd15b0-723d-47e2-96a2-848deb9e5d89",
+        "images/tour_1.jpg",
       alt: "마카오",
       sale: "6월 할인 최저가",
       title: "마카오 하우스 오브 댄싱 워터 쇼 티켓",
@@ -38,7 +38,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "다낭/호이안",
       image:
-        "http://tourimage.interpark.com/product/tour/00161/B10/500/B1016703_6_467.jpg",
+        "images/tour_2.jpg",
       alt: "다낭/호이안",
       sale: "VIP 패스트트랙 제공",
       title:
@@ -50,7 +50,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "도쿄",
       image:
-        "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/d086c8c5-652a-4c6c-87f8-f0ecd3ae7041",
+        "images/tour_3.jpg",
       alt: "도쿄",
       sale: "단독 10% 할인",
       title: "[최저가] 도쿄 타워 전망대 입장권 (150m) 단독 할인",
@@ -61,7 +61,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "시드니",
       image:
-        "https://media.triple.guide/triple-cms/c_fill,f_auto,h_450,w_580/7d4e0967-a6b5-47ae-92a8-9c5c1773b4a4.jpeg",
+        "images/tour_4.jpg",
       alt: "시드니",
       sale: "노팁/노옵션",
       title: "[NO팁/NO옵션][품격] 시드니 완전일주 6일 &lt;전일정4성&gt;",
@@ -72,7 +72,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "강원",
       image:
-        "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1747962603/domstay/4c607300fc404181.jpg",
+        "images/tour_5.jpg",
       alt: "강원",
       sale: "패밀리 스탠다드 + 웰컴드링크 2인 + 할인권",
       title: "소노벨 비발디파크 B , C",
@@ -83,7 +83,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "호놀룰루",
       image:
-        "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/18da9cff-8b9c-4fe8-bd20-405aef650a6b.jpeg",
+        "images/tour_6.jpg",
       alt: "호놀룰루",
       sale: "5성급 인기호텔 15%쿠폰제공",
       title: "카라이 와이키키 비치 호텔",
@@ -94,7 +94,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "다낭",
       image:
-        "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/e4bf929f-d808-4069-9508-b948d2d1d2fe.jpeg",
+        "images/tour_7.jpg",
       alt: "다낭",
       sale: "2024년 오픈 5성급 풀빌라 리조트+10%쿠폰제공",
       title: "퓨전 리조트 앤 빌라스 다낭",
@@ -105,7 +105,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "오사카",
       image:
-        "https://media.triple.guide/triple-cms/c_limit,f_auto,h_1024,w_1024/54840827-0d86-432d-9d67-70b09b9d1168.jpeg",
+        "images/tour_8.jpg",
       alt: "오사카",
       sale: "도톤보리 2분거리 3성급호텔",
       title: "호텔 포르자 오사카 난바 도톤보리",
@@ -116,7 +116,7 @@ window.addEventListener("load", function () {
       link: "#",
       city: "강원",
       image:
-        "https://media.interparkcdn.net/interpark-tour/image/upload/w_640,h_410,c_limit/v1739769418/domstay/788e334c9cc14a72.png",
+        "images/tour_9.jpg",
       alt: "강원",
       sale: "디럭스 더블",
       title: "신라스테이 여수 엑스포역",
