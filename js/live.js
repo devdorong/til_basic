@@ -213,7 +213,7 @@ window.addEventListener("load", function () {
       tag = `
       <div class="swiper-slide">
         <a href="#" class="live_slide_item">  
-          <div class="live_image${isReplay ? " replay" : ""}">
+          <div class="live_image${isReplay ? " replay" : ""}">  
             <img
               src="${liveApiData[i].이미지}"
               alt="${liveApiData[i].alt}"
