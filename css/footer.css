@@ -7,10 +7,10 @@
   max-width: 1280px;
 }
 .footer_top {
-  position: relative;
-  z-index: 888;
   border-top: 1px solid #e4e4e4;
   border-bottom: 1px solid #e4e4e4;
+  position: relative;
+  z-index: 888;
 }
 .footer_menu_list {
   display: flex;
@@ -26,14 +26,14 @@
   display: none;
 }
 .footer_menu_list > li::after {
-  content: "";
-  position: absolute;
-  right: -33px;
-  top: 4px;
   display: block;
+  position: absolute;
+  top: 4px;
+  right: -33px;
   width: 1px;
   height: 12px;
   background-color: #ccc;
+  content: "";
 }
 .footer_menu_list > li > a {
   position: relative;
@@ -47,18 +47,18 @@
   color: #29292d;
 }
 .footer_more {
+  display: flex;
+  justify-content: center;
   position: relative;
   font-size: 13px;
   color: #29292d;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
 }
 .footer_more > span {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 .footer_more > span > img {
   transform: scale(0.75) rotate(90deg);
@@ -68,12 +68,12 @@
 }
 
 .more_box {
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
   /* background-color: red; */
   padding-top: 25px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .more_list {
@@ -106,10 +106,10 @@
 .footer_contact_box {
 }
 .footer_contact_box > h3 {
-  color: #111;
+  padding-bottom: 8px;
   font-size: 14px;
   font-weight: 700;
-  padding-bottom: 8px;
+  color: #111;
 }
 .footer_contact_box > ul {
   font-size: 12px;
@@ -122,8 +122,8 @@
   color: #6a6a6c;
 }
 .footer_contact_box > ul > li > button {
-  background-color: #fff;
   border: none;
+  background-color: #fff;
 }
 .footer_contact_box > ul > li > button > a {
   font-size: 12px;
@@ -131,15 +131,15 @@
   text-decoration: underline;
 }
 .footer_contact_box > ul > li > address {
-  font-style: normal;
   padding-bottom: 0;
+  font-style: normal;
 }
 .footer_copyright {
   padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 12px;
   font-weight: 400;
   color: rgba(18, 18, 18, 0.5);
-  padding-bottom: 30px;
 }
 .footer_copyright p {
   margin-bottom: 5px;
@@ -177,10 +177,10 @@
 
 /* 모바일용 하단 */
 .mb_footer {
-  background-color: #f7f7f8;
-  padding: 20px;
   display: none;
   margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f8;
 }
 .mb_footer_menu {
 }
@@ -203,18 +203,17 @@
 .contact_row {
   display: flex;
   align-items: center;
-  gap: 12px;
   flex-wrap: wrap; /* 화면 작을 경우 줄바꿈 */
 }
 .mb_footer_info {
 }
 .mb_footer_link {
-  margin-top: 20px;
   display: inline-flex;
   align-items: center;
+  margin-top: 20px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 31px;
-  padding: 10px;
 }
 .mb_footer_link img {
   display: flex;
@@ -222,17 +221,17 @@
 }
 .circle {
   display: block;
+  margin: 0 18px;
   width: 6px;
   height: 6px;
-  border-radius: 50%;
   background-color: #d9d9d9;
-  margin: 0 18px;
+  border-radius: 50%;
 }
 .mb_footer_copy {
-  color: #bfbfc0;
-  font-size: 10px;
-  padding-bottom: 60px;
   padding-top: 10px;
+  padding-bottom: 60px;
+  font-size: 10px;
+  color: #bfbfc0;
 }
 
 @media all and (max-width: 1024px) {
@@ -249,25 +248,21 @@
 }
 /* js 에서 추가하도록 합니다. */
 .mb_footer_show {
-  display: block ;
+  display: block;
 }
-
 
 #mb_bt {
   display: flex;
-  align-items: center;
   gap: 5px;
+  align-items: center;
   cursor: pointer;
 }
 #mb_bt i {
 }
 #mb_bt i img {
-  
-  transform:  scale(0.7) rotate(90deg);
-
+  transform: scale(0.7) rotate(90deg);
 }
 
 .img-up {
-    transform:  scale(0.7) rotate(-90deg) !important;
-
+  transform: scale(0.7) rotate(-90deg) !important;
 }
