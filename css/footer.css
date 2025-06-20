@@ -180,6 +180,7 @@
   background-color: #f7f7f8;
   padding: 20px;
   display: none;
+  margin-top: 20px;
 }
 .mb_footer_menu {
 }
@@ -198,6 +199,12 @@
   width: 1px;
   height: 12px;
   background-color: rgba(18, 18, 18, 0.5);
+}
+.contact_row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap; /* 화면 작을 경우 줄바꿈 */
 }
 .mb_footer_info {
 }
@@ -238,16 +245,29 @@
 }
 
 .mb_footer_hide {
-  /* display: none; */
+  display: none;
 }
+/* js 에서 추가하도록 합니다. */
+.mb_footer_show {
+  display: block ;
+}
+
 
 #mb_bt {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 #mb_bt i {
-  transform: rotate(90deg);
 }
 #mb_bt i img {
+  
+  transform:  scale(0.7) rotate(90deg);
+
+}
+
+.img-up {
+    transform:  scale(0.7) rotate(-90deg) !important;
+
 }
