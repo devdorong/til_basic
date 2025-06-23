@@ -12,7 +12,7 @@ console.log("header.js 코드 실행");
 // ↳ 변수명  : 명사, 영어(소문자)
 // = document.~~~()     : =를 기준으로 오른쪽에 있는것을 보관
 // console.log(이름표)   : 이름표 있는것을 사용
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("DOMContentLoaded",  () => {
     const header = document.querySelector(".header");
   //상단 영역
   const headerTop = document.querySelector(".header_top");
@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", function () {
   }
   
   // 웹브라우저의 스크롤을 체크하겠다.
-  window.addEventListener("scroll", function () {
+  window.addEventListener("scroll",  () => {
     // 스크롤바의 최상단
     const scY = window.scrollY;
     if (scY > 70) {
@@ -64,11 +64,11 @@ window.addEventListener("DOMContentLoaded", function () {
       linkSite.classList.add("link_site_hide");
       search.classList.add("search_scroll");
       // 메인메뉴 class 추가
-       mainMenuA.forEach(function (item) {
+       mainMenuA.forEach((item) => {
          item.classList.add("height_62");
        });
        // 멤버메뉴 class 추가
-       memberMenuA.forEach(function (item) {
+       memberMenuA.forEach((item) => {
          item.classList.add("height_62");
        });
        mobileHeader.classList.add("mobile_scroll_line");
@@ -81,10 +81,10 @@ window.addEventListener("DOMContentLoaded", function () {
       linkSite.classList.remove("link_site_hide");
       search.classList.remove("search_scroll");
       
-       mainMenuA.forEach(function (item) {
+       mainMenuA.forEach( (item) => {
          item.classList.remove("height_62");
        });
-       memberMenuA.forEach(function (item) {
+       memberMenuA.forEach( (item) => {
          item.classList.remove("height_62");
        });
        mobileHeader.classList.remove("mobile_scroll_line");

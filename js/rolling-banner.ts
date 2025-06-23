@@ -1,5 +1,5 @@
 // 파일 로딩 완료시 실행
-window.addEventListener("load", function () {
+window.addEventListener("load", (): void => {
   // 배너 데이터
   type bannerDataType = {
     uid: number;
@@ -19,8 +19,10 @@ window.addEventListener("load", function () {
   // html 태그의 속성의 값 바꾸기
 
   // html 선택하기
-  const bannerAnchorTag: HTMLAnchorElement | null = document.querySelector(".sale");
-  const bannerImgTag: HTMLImageElement | null = document.querySelector(".sale img");
+  const bannerAnchorTag: HTMLAnchorElement | null =
+    document.querySelector(".sale");
+  const bannerImgTag: HTMLImageElement | null =
+    document.querySelector(".sale img");
 
   // 롤링 작동하기
   //   console.log("링크 주소 : ", bannerAnchorTag.href);
@@ -32,21 +34,23 @@ window.addEventListener("load", function () {
   //   bannerImgTag.alt = bannerApiData[i].title;
 
   // 방어 코드
-  if(bannerAnchorTag) {
+  if (bannerAnchorTag) {
     bannerAnchorTag.href = bannerApiData[0].link;
   }
-  if(bannerImgTag) {
+  if (bannerImgTag) {
     bannerImgTag.src = bannerApiData[0].image;
     bannerImgTag.alt = bannerApiData[0].title;
-
   }
 
   // 알고리즘
-  let startIndex:number = 0;
-  let totalCount:number = bannerApiData.length;
+  let startIndex: number = 0;
+  let totalCount: number = bannerApiData.length;
 
-  // 타이머 만들기
-  let bannerTimer = setInterval(function () {
+  /**
+   * 배너가 변경되는 기능
+   * 사용법 : bannerChange()
+   */
+  const bannerChange = (): void => {
     startIndex = startIndex + 1;
     if (startIndex >= totalCount) {
       startIndex = 0;
@@ -54,25 +58,20 @@ window.addEventListener("load", function () {
     bannerAnchorTag!.href = bannerApiData[startIndex].link;
     bannerImgTag!.src = bannerApiData[startIndex].image;
     bannerImgTag!.alt = bannerApiData[startIndex].title;
-  }, 1000);
+  };
+
+  // 타이머 만들기
+  let bannerTimer = setInterval(bannerChange, 1000);
 
   // 마우스 커서 배너 제어하기
   //   const sale = document.querySelector(".sale");
   // 세일 영역에 마우스가 걸친다면
-  bannerAnchorTag!.addEventListener("mouseenter", function () {
+  bannerAnchorTag!.addEventListener("mouseenter", (): void => {
     clearInterval(bannerTimer);
   });
   // 세일 영역에 마우스가 빠져나간다면
-  bannerAnchorTag!.addEventListener("mouseleave", function () {
+  bannerAnchorTag!.addEventListener("mouseleave", (): void => {
     clearInterval(bannerTimer);
-    bannerTimer = setInterval(function () {
-      startIndex = startIndex + 1;
-      if (startIndex >= totalCount) {
-        startIndex = 0;
-      }
-      bannerAnchorTag!.href = bannerApiData[startIndex].link;
-      bannerImgTag!.src = bannerApiData[startIndex].image;
-      bannerImgTag!.alt = bannerApiData[startIndex].title;
-    }, 1000);
+    bannerTimer = setInterval(bannerChange, 1000);
   });
 });

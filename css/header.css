@@ -3,9 +3,8 @@
   position: block;
   top: 0;
   left: 0;
-
+  display: flex;
   z-index: 999;
-  padding: 0 20px;
   width: 100%;
   background-color: #ffffff;
   margin: 0 auto;
@@ -174,6 +173,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 
 .member_menu {
