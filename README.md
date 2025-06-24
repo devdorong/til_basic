@@ -660,7 +660,9 @@
   overflow: hidden;
 }
 ```
+
 ## 4.11. Gradient 온라인 도구
+
 - http://cssgradient.io
 
 ## 4.12. 두줄 말 줄임 코드 (... 처리)
@@ -676,7 +678,6 @@
   word-break: break-all;
 }
 ```
-
 
 # 5. javaScript 의 이해
 
@@ -1033,4 +1034,115 @@ navigation: {
       nextEl: ".버튼클래스명",
       prevEl: ".버튼클래스명",
     },
+```
+
+# 7. SCSS
+
+## 7.1. VSCode 컴파일 플러그인 설치
+
+- `Live Sass Compiler` 설치
+
+## 7.2. 실습 환경
+
+- `scss 폴더 만들기`
+- `scss 폴더/test.scss 파일` 만들기
+- 반드시 VSCode 의 하단 바에 `Watch Sass` 를 `Watching...` 으로
+
+## 7.3. 환경 셋팅
+
+- 파일명.scss 는 `scss 폴더`에 보관
+- 파일명.css 는 `css 폴더`에 보관
+
+### 환경 설정
+
+![Image](https://github.com/user-attachments/assets/2503ee73-4932-4aca-b994-c27ebbc7df9b)
+
+- `Settings 메뉴` 선택
+  ![Image](https://github.com/user-attachments/assets/261e85a8-7e1f-42f8-9872-cf14a8d0f319)
+- 다음의 코드를 추가한다.
+
+```json
+,
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css",
+      "savePathReplacementPairs": null
+    }
+  ]
+```
+
+## 7.4. 기초 문법
+
+- 참조 : https://www.heropy.dev/p/Y7OrPe
+- 중첩()
+
+```scss
+// 중첩 (Nesting)
+.card {
+  border: 1px solid #000;
+  .title {
+    position: relative;
+    font-weight: 700;
+    &:hover {
+      color: blue;
+    }
+    &:active {
+      color: orange;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 32px;
+      height: 32px;
+      background-color: red;
+    }
+  }
+  .content {
+    color: orange;
+    button {
+      border: 1px solid green;
+      &:hover {
+        background-color: red;
+      }
+    }
+  }
+}
+```
+
+```css
+.card {
+  border: 1px solid #000;
+}
+.card .title {
+  position: relative;
+  font-weight: 700;
+}
+.card .title:hover {
+  color: blue;
+}
+.card .title:active {
+  color: orange;
+}
+.card .title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  background-color: red;
+}
+.card .content {
+  color: orange;
+}
+.card .content button {
+  border: 1px solid green;
+}
+.card .content button:hover {
+  background-color: red;
+} /*# sourceMappingURL=test.css.map */
 ```
