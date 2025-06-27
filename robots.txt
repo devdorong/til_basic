@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://til-basic-five.vercel.app/
+Sitemap: https://til-basic-five.vercel.app/sitemap.xml
