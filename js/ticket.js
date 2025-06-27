@@ -213,7 +213,6 @@ window.addEventListener("load", function () {
       </div>
     
   `;
-  console.log("만들어진 태그 : ", html);
   ticketPos.innerHTML = html;
 
   // swiper 만들기 실행

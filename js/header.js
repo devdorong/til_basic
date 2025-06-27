@@ -1,4 +1,4 @@
-console.log("header.js 코드 실행");
+// console.log("header.js 코드 실행");
 
 
 // html 의 태그구조를 모두 읽어들였다면 그때 찾아라.
