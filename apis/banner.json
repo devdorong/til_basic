@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "link": "#",
+    "image": "images/s1.png",
+    "alt": "도쿄 타워 슈퍼 위크"
+  },
+  {
+    "id": 2,
+    "link": "#",
+    "image": "images/s2.png",
+    "alt": "2025 여름맞이 숙박세일 페스타"
+  },
+  {
+    "id": 3,
+    "link": "#",
+    "image": "images/s3.png",
+    "alt": "6월 해외여행 혜택 모음"
+  },
+  {
+    "id": 4,
+    "link": "#",
+    "image": "images/s4.png",
+    "alt": "나의 세계를 놀랍게 NOL"
+  },
+  {
+    "id": 5,
+    "link": "#",
+    "image": "images/s5.png",
+    "alt": "인터파크TV_목요일"
+  },
+  {
+    "id": 6,
+    "link": "#",
+    "image": "images/s6.png",
+    "alt": "6월 티켓 혜택 모음"
+  }
+  
+]

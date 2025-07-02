@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "link": "#",
+    "city": "마카오",
+    "image": "images/tour_1.jpg",
+    "alt": "마카오",
+    "sale": "6월 할인 최저가",
+    "title": "마카오 하우스 오브 댄싱 워터 쇼 티켓",
+    "price": "120,000"
+  },
+  {
+    "id": 2,
+    "link": "#",
+    "city": "다낭/호이안",
+    "image": "images/tour_2.jpg",
+    "alt": "다낭/호이안",
+    "sale": "VIP 패스트트랙 제공",
+    "title": "다낭 자유여행 5/6일 신라모노그램,중식1회+망고빙수,패스트트랙+왕복픽업 포함",
+    "price": "609,000"
+  },
+  {
+    "id": 3,
+    "link": "#",
+    "city": "도쿄",
+    "image": "images/tour_3.jpg",
+    "alt": "도쿄",
+    "sale": "단독 10% 할인",
+    "title": "[최저가] 도쿄 타워 전망대 입장권 (150m) 단독 할인",
+    "price": "13,399"
+  },
+  {
+    "id": 4,
+    "link": "#",
+    "city": "시드니",
+    "image": "images/tour_4.jpg",
+    "alt": "시드니",
+    "sale": "노팁/노옵션",
+    "title": "[NO팁/NO옵션][품격] 시드니 완전일주 6일 &lt;전일정4성&gt;",
+    "price": "1,749,000"
+  },
+  {
+    "id": 5,
+    "link": "#",
+    "city": "강원",
+    "image": "images/tour_5.jpg",
+    "alt": "강원",
+    "sale": "패밀리 스탠다드 + 웰컴드링크 2인 + 할인권",
+    "title": "소노벨 비발디파크 B , C",
+    "price": "126,000"
+  },
+  {
+    "id": 6,
+    "link": "#",
+    "city": "호놀룰루",
+    "image": "images/tour_6.jpg",
+    "alt": "호놀룰루",
+    "sale": "5성급 인기호텔 15%쿠폰제공",
+    "title": "카라이 와이키키 비치 호텔",
+    "price": "476,500"
+  },
+  {
+    "id": 7,
+    "link": "#",
+    "city": "다낭",
+    "image": "images/tour_7.jpg",
+    "alt": "다낭",
+    "sale": "2024년 오픈 5성급 풀빌라 리조트+10%쿠폰제공",
+    "title": "퓨전 리조트 앤 빌라스 다낭",
+    "price": "158,695"
+  },
+  {
+    "id": 8,
+    "link": "#",
+    "city": "오사카",
+    "image": "images/tour_8.jpg",
+    "alt": "오사카",
+    "sale": "도톤보리 2분거리 3성급호텔",
+    "title": "호텔 포르자 오사카 난바 도톤보리",
+    "price": "131,950"
+  },
+  {
+    "id": 9,
+    "link": "#",
+    "city": "강원",
+    "image": "images/tour_9.jpg",
+    "alt": "강원",
+    "sale": "디럭스 더블",
+    "title": "신라스테이 여수 엑스포역",
+    "price": "90,000"
+  }
+]

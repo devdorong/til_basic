@@ -1,80 +1,40 @@
 window.addEventListener("DOMContentLoaded", () => {
-  // 가짜 데이터(Dummy 데이터 또는 Mock 데이터)
-  const apiData = [
-    {
-      id: 1,
-      link: "#",
-      image: "images/s1.png",
-      alt: "도쿄 타워 슈퍼 위크",
-    },
-    {
-      id: 2,
-      link: "#",
-      image: "images/s2.png",
-      alt: "2025 여름맞이 숙박세일 페스타",
-    },
-    {
-      id: 3,
-      link: "#",
-      image: "images/s3.png",
-      alt: "6월 해외여행 혜택 모음",
-    },
-    {
-      id: 4,
-      link: "#",
-      image: "images/s4.png",
-      alt: "나의 세계를 놀랍게 NOL",
-    },
-    {
-      id: 5,
-      link: "#",
-      image: "images/s5.png",
-      alt: "인터파크TV_목요일",
-    },
-    {
-      id: 6,
-      link: "#",
-      image: "images/s6.png",
-      alt: "6월 티켓 혜택 모음",
-    },
-  ];
-  // 슬라이드 갯수
-  const total = apiData.length;
-  // 슬라이드 배치장소
   const bannerPos = document.querySelector(".sw_banner .swiper-wrapper");
   const banner = document.querySelector(".sw_banner");
-  // html 태그 만들기
-  const tag = `
-    <div class="swiper-slide">
-        <a href="#" class="banner_slide_item">
-            <img src="images/s2.png" alt="이미지" />
-        </a>
-    </div>
-    `;
-
-  // 6개 만들기
-  let htmlTag = "";
-
-  // html 태그 만드는 기능
-  function makeHtml() {
-    for (let i = 0; i < total; i++) {
-      htmlTag =
-        htmlTag +
-        `
-    <div class="swiper-slide">
-        <a href="${apiData[i].link}" class="banner_slide_item">
-            <img src="${apiData[i].image}" alt="${apiData[i].alt}" />
-        </a>
-    </div>
-    `;
+  // 1. 데이터를 부르자
+  async function getData() {
+    try {
+      const res = await fetch("/apis/banner.json");
+      // const res = await fetch("https://nol.interpark.com/api/liveProduct");
+      const result = await res.json();
+      // 2 번 진행 시작
+      makeHtml(result);
+    } catch (error) {
+      console.log(error);
     }
-    // html 장소에 배치하기
-    bannerPos.innerHTML = htmlTag;
   }
 
-  // console.log(htmlTag);
+  // 실행하기
+  getData();
+  // 2. html 태그 만들기
+  let html = "";
+  function makeHtml(data) {
+    for (let i = 0; i < data.length; i++) {
+      const obj = data[i];
+      const tag = `
+      <div class="swiper-slide">
+            <a href="${obj.link}" class="banner_slide_item">
+                <img src="${obj.image}" alt="${obj.alt}" />
+            </a>
+        </div>
+      `;
+      html = html + tag;
+      // console.log(tag);
 
-  // 슬라이드 만들기
+      bannerPos.innerHTML = html;
+    }
+  }
+
   function makeSlide() {
     const swiper = new Swiper(".sw_banner", {
       slidesPerView: 1,
@@ -104,7 +64,6 @@ window.addEventListener("DOMContentLoaded", () => {
     return swiper;
   }
 
-  makeHtml();
   const swiper = makeSlide();
 
   // 배너 영역에 마우스가 걸친다면
