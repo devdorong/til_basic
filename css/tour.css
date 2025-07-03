@@ -124,6 +124,10 @@
   font-size: 15px;
   font-weight: 400;
   color: rgb(65, 84, 255);
+  
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 /* 한줄 말줄임 ... 은 css로 작업합니다. */
 /*  white-space: nowrap;

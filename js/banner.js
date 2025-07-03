@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
       const result = await res.json();
       // 2 번 진행 시작
       makeHtml(result);
+      const swiper = makeSlide();
     } catch (error) {
       console.log(error);
     }
